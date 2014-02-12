@@ -30,7 +30,7 @@
 #include <cstring>
 
 #ifdef US_HAVE_TR1_FUNCTIONAL_H
-  #include <tr1/functional>
+  #include <functional>
 #elif defined(US_HAVE_FUNCTIONAL_H)
   #include <functional>
 #endif
@@ -38,7 +38,7 @@
 #ifdef US_HAVE_STD_FUNCTION
   #define US_FUNCTION_TYPE std::function
 #elif defined(US_HAVE_TR1_FUNCTION)
-  #define US_FUNCTION_TYPE std::tr1::function
+  #define US_FUNCTION_TYPE std::function
 #endif
 
 #define US_MODULE_LISTENER_FUNCTOR US_FUNCTION_TYPE<void(const US_PREPEND_NAMESPACE(ModuleEvent)&)>

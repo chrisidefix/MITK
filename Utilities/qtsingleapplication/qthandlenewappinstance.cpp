@@ -22,6 +22,8 @@ See LICENSE.txt or http://www.mitk.org for details.
 #ifdef Q_OS_WIN
 #include <windows.h>
 //#include <private/qfsfileengine_p.h>
+#else
+#include <unistd.h>
 #endif
 
 bool createTemporaryDir(QString& path)
